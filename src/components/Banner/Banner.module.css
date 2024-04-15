@@ -1,0 +1,30 @@
+/* * Banner */
+.banner {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.content {
+  background-color: var(--c-gainsboro);
+  justify-content: center;
+  align-items: center;
+  min-height: 145px;
+  display: flex;
+}
+
+.block {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.input {
+  border: 1px solid var(--c-gainsboro);
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.input:hover {
+  border-color: var(--c-orange);
+}

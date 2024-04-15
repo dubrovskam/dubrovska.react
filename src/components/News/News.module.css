@@ -1,0 +1,26 @@
+.news {
+  width: 100%;
+  max-width: 300px;
+  background-color: var(--c-gainsboro);
+}
+
+.text {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.blocks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.block {
+  width: 100%;
+  min-height: 110px;
+  background-color: var(--c-lightsteelblue);
+  margin-bottom: 10px;
+}

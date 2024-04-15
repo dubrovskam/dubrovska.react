@@ -1,0 +1,7 @@
+.list {
+  display: block;
+}
+
+.item {
+  color: var(--c-brown);
+}
