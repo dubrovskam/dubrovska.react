@@ -5,6 +5,7 @@ import cn from 'classnames';
 import Blog from '../Blog/Blog';
 import News from '../News/News';
 import List from '../List/List';
+import Weather from '../Weather/Weather';
 
 // * Styles
 import styles from './Main.module.css';
@@ -19,6 +20,7 @@ const Main = () => {
           <News />
         </div>
         <List />
+        <Weather />
       </Wrapper>
     </main>
   );

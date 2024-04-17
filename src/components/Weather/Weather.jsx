@@ -5,9 +5,9 @@ import { useEffect } from 'react';
 import axios from 'axios';
 
 // * Styles
-import styles from './List.module.css';
+import styles from './Weather.module.css';
 
-const Wether = async () => {
+const Weather = () => {
   const [list, setList] = useState([]);
 
   const getList = useCallback(() => {
@@ -18,12 +18,17 @@ const Wether = async () => {
       .then((response) => {
         console.log('response: ', response);
         setList(response);
+      })
+      .catch((error) => {
+        console.error('Error fetching weather data:', error);
       });
   }, []);
 
   useEffect(() => {
     getList();
   }, [getList]);
+
+  if (!list) return <p>Loading...</p>;
 
   return (
     <ul className={styles.list}>
@@ -42,4 +47,4 @@ const Item = ({ title }) => {
   );
 };
 
-export default Wether;
+export default Weather;
