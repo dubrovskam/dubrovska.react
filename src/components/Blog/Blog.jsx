@@ -1,16 +1,16 @@
 // * Styles
+import LIST from './Blog.data';
 import styles from './Blog.module.css';
 
 const Blog = () => {
   return (
     <div className={styles.blog}>
-      <div className={styles.blocks}>
-        <h3 className={styles.text}>Blog</h3>
-        <div className={styles.block}></div>
-        <div className={styles.block}></div>
-        <div className={styles.block}></div>
-        <div className={styles.block}></div>
-      </div>
+      <h3 className={styles.title}>Blog</h3>
+      <ul className={styles.list}>
+        {LIST.map((_, index) => (
+          <li key={'blog-item-' + index} className={styles.item}></li>
+        ))}
+      </ul>
     </div>
   );
 };

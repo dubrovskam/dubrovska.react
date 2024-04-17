@@ -1,26 +1,26 @@
 .news {
-  width: 100%;
-  max-width: 300px;
   background-color: var(--c-gainsboro);
+  max-width: 300px;
+  width: 100%;
 }
 
-.text {
+.title {
+  padding-bottom: 15px;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
-.blocks {
-  display: flex;
-  align-items: center;
+.list {
   flex-direction: column;
-  padding-left: 15px;
+  align-items: center;
   padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
 }
 
-.block {
-  width: 100%;
-  min-height: 110px;
+.item {
   background-color: var(--c-lightsteelblue);
   margin-bottom: 10px;
+  min-height: 110px;
+  width: 100%;
 }

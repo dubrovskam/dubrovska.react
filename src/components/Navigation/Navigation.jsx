@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 // * Styles
-import NAVIGATION from './Navigation.data';
+import DATA from './Navigation.data';
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
       <ul className={styles.list}>
-        {NAVIGATION.map(({ title, id }) => (
+        {DATA.map(({ title, id }) => (
           <Item title={title} key={`list item ${id}`} />
         ))}
       </ul>
