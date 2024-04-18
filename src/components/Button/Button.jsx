@@ -1,11 +1,19 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/prop-types */
 // * Base
 import cn from 'classnames';
 
 // * Styles
 import styles from './Button.module.css';
 
-// eslint-disable-next-line react/prop-types
-const Button = ({ text = 'Default text', type = 'button', color, onClick }) => {
+const Button = ({
+  text = 'Default text',
+  type = 'button',
+  disabled = false,
+  color,
+  href = '',
+  onClick,
+}) => {
   const styleList = [styles.button];
 
   switch (color) {
@@ -18,18 +26,32 @@ const Button = ({ text = 'Default text', type = 'button', color, onClick }) => {
       break;
     }
     default: {
-      console.log(':)');
+      // console.log(':)');
     }
   }
+
+  if (href)
+    return (
+      <Link text={text} href={href} onClick={onClick} styleList={styleList} />
+    );
 
   return (
     <button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       className={cn(styles.button, styleList)}
     >
       <span>{text}</span>
     </button>
+  );
+};
+
+const Link = ({ text, href, onClick, styleList }) => {
+  return (
+    <a target="_blank" href={href} onClick={onClick} classNames={cn(styleList)}>
+      <span>{text}</span>
+    </a>
   );
 };
 

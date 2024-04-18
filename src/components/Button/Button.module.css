@@ -21,6 +21,11 @@
   border-color: var(--c-orange);
 }
 
+.button:disabled {
+background-color: var(--c-grey);
+cursor: default;
+}
+
 .orange {
   background-color: var(--c-orange);
   border: 1px solid var(--c-orange);

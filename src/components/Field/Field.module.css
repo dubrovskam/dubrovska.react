@@ -1,0 +1,23 @@
+.label {
+  display: block;
+}
+
+.title {
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: var(--c-red);
+  font-size: 12px;
+  height: 25px;
+  line-height: 1;
+  padding-top: 5px;
+}
+
+.input {
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}

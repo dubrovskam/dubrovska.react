@@ -4,8 +4,9 @@ import cn from 'classnames';
 // * Components
 import Blog from '../Blog/Blog';
 import News from '../News/News';
-import List from '../List/List';
+// import List from '../List/List';
 import Weather from '../Weather/Weather';
+import RegistrationForm from '../RegistrationForm/RegistrationForm';
 
 // * Styles
 import styles from './Main.module.css';
@@ -19,8 +20,9 @@ const Main = () => {
           <Blog />
           <News />
         </div>
-        <List />
+        {/* <List /> */}
         <Weather />
+        <RegistrationForm />
       </Wrapper>
     </main>
   );
