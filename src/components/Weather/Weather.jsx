@@ -11,10 +11,10 @@ import Field from '../Field/Field';
 const Weather = () => {
 
   const [data, setData] = useState({
-    celcius: 'temp',
+    celcius: '0',
     cityName: 'city',
-    humidity: 10,
-    speed: 2,
+    humidity: 0,
+    speed: 0,
   });
 
   const [name, setName] = useState('');

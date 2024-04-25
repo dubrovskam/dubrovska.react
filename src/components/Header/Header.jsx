@@ -1,11 +1,12 @@
 // * Base
+import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 // * Components
-import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
-import Button from '../Button/Button';
 import Wrapper from '../Wrapper/Wrapper';
+import Button from '../Button/Button';
+import Logo from '../Logo/Logo';
 
 // * Styles
 import styles from './Header.module.css';
@@ -17,7 +18,9 @@ const Header = () => {
         <div className={cn(styles.container)}>
           {/* * Logo */}
           <Logo />
-
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/weather">Weather</Link>
           {/* * Navigation */}
           <Navigation />
 

@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 // * Components
 import Button from '../Button/Button';
-import Wrapper from '../Wrapper/Wrapper';
+import Field from '../Field/Field';
 
 // * Styles
 import styles from './Banner.module.css';
@@ -22,18 +22,15 @@ const Banner = () => {
   };
 
   return (
-    <Wrapper>
-      <section className={cn(styles.banner)}>
-        <h1 style={{ color }}>Your favorite color: {color}</h1>
-        <div className={styles.block}>
-          <input type="text" onInput={onInputChange} className={styles.input} />
-
-          <Button text={'Add'} onClick={onColorChange} />
-          <Button text={'Clean'} onClick={() => setColor('')} />
-        </div>
-        <div className={styles.content}>Full-width banner image</div>
-      </section>
-    </Wrapper>
+    <section className={cn(styles.banner)}>
+      <h2 className={styles.title} style={{ color }}>Your favorite color: {color}</h2>
+      <div className={styles.block}>
+        <Field onChange={onInputChange}/>
+        <Button text={'Add'} onClick={onColorChange} />
+        <Button text={'Clean'} onClick={() => setColor('')} />
+      </div>
+      <div className={styles.content}>Full-width banner image</div>
+    </section>
   );
 };
 

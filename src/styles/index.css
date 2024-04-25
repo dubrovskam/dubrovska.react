@@ -1,15 +1,15 @@
 :root {
   --c-black: #000;
-  --c-white: #fff;
-  --c-orange: #ff9900;
   --c-brown: #2f281e;
+  --c-grey: #808080;
+  --c-white: #fff;
+  --c-linen: #f8f0e4;
   --c-gainsboro: #d9d9d9;
   --c-mistyrose: #f9d7d7;
-  --c-blue: #bcd0e5;
   --c-lightsteelblue: #bdcdf6;
-  --c-linen: #f8f0e4;
+  --c-blue: #bcd0e5;
+  --c-orange: #ff9900;
   --c-red: #fa0101;
-  --c-grey: #808080;
   /* * Transition */
   --t-normal: all 0.15s ease-in 0s;
 }
@@ -35,4 +35,8 @@ a {
 
 input {
   width: 100%;
+}
+
+textarea {
+  resize: none;
 }
